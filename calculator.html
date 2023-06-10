@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="calculator">
+      <input type="text" id="result" disabled>
+      <div class="button-row">
+        <button class="operator" onclick="clearResult()">C</button>
+        <button class="operator" onclick="Delete()">DEL</button>
+        <button class="operator" onclick="calPercentage()">%</button>
+        <button class="operator" onclick="Solve('/')">/</button>
+      </div>
+      <div class="button-row">
+        <button onclick="Solve('7')">7</button>
+        <button onclick="Solve('8')">8</button>
+        <button onclick="Solve('9')">9</button>
+        <button class="operator" onclick="Solve('*')">*</button>
+      </div>
+      <div class="button-row">
+        <button onclick="Solve('4')">4</button>
+        <button onclick="Solve('5')">5</button>
+        <button onclick="Solve('6')">6</button>
+        <button class="operator" onclick="Solve('-')">-</button>
+      </div>
+      <div class="button-row">
+        <button onclick="Solve('1')">1</button>
+        <button onclick="Solve('2')">2</button>
+        <button onclick="Solve('3')">3</button>
+        <button class="operator" onclick="Solve('+')">+</button>
+      </div>
+      <div class="button-row">
+        <button class="wide" onclick="Solve('00')">00</button>
+        <button onclick="Solve('.')">.</button>
+        <button onclick="Solve('0')">0</button>
+        <button onclick="Result()">=</button>
+      </div>
+    </div>
+    <script src="calculator.js"></script>
+  </body>
+</html>
